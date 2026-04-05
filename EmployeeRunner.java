@@ -1,15 +1,13 @@
 class EmployeeRunner {
     public static void main(String[] args) {
-        Employee ref = new Employee();
-
-        ref.name = "Anita";
-        ref.id = 501;
-        ref.department = "HR";
-        ref.salary = 35000;
-        ref.company = "Infosys";
-        ref.designation = "Manager";
-		ref.display();
-
-        
+        new Employee();
+        System.out.println("-----------");
+        new Employee("Sita", 202);
+        System.out.println("-----------");
+        new Employee("Amit", 203, 45000);
+        System.out.println("-----------");
+        new Employee("Neha", 204, 60000, "IT");
+        System.out.println("-----------");
+        new Employee("Raj", 205, 70000, "Finance", "TCS");
     }
 }

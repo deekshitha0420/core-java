@@ -1,19 +1,32 @@
 class Car {
-    String name;
-    String brand;
+
+    String carName;
+    int model;
     double price;
     String color;
-    int mileage;
     String fuelType;
-	
-	public void display(){
-		System.out.println("Car name:"+name);
-		System.out.println("Car brand:"+brand);
-		System.out.println("Car price :"+price);
-		System.out.println("Car color:"+color);
-		System.out.println("Car mileage:"+mileage);
-		System.out.println("Car fuelType:"+fuelType);
-	
-	
-	}
+
+    Car() {
+        this("Swift", 2020);
+        System.out.println("Default Constructor");
+    }
+
+    Car(String carName, int model) {
+        this(carName, model, 800000);
+        System.out.println("Two Parameter Constructor");
+    }
+
+    Car(String carName, int model, double price) {
+        this(carName, model, price, "White");
+        System.out.println("Three Parameter Constructor");
+    }
+
+    Car(String carName, int model, double price, String color) {
+        this(carName, model, price, color, "Petrol");
+        System.out.println("Four Parameter Constructor");
+    }
+
+    Car(String carName, int model, double price, String color, String fuelType) {
+        System.out.println(carName + " " + model + " " + price + " " + color + " " + fuelType);
+    }
 }

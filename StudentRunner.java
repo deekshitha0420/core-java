@@ -1,15 +1,13 @@
 class StudentRunner {
     public static void main(String[] args) {
-        Student ref = new Student();
-
-        ref.name = "Deekshitha";
-        ref.age = 20;
-        ref.course = "BCA";
-        ref.college = "MFGC College";
-        ref.rollNumber = 101;
-        ref.grade = "A";
-		ref.display();
-
-       
+        new Student();
+        System.out.println("-----------");
+        new Student("Ravi", 2);
+        System.out.println("-----------");
+        new Student("Kiran", 3, "BSc");
+        System.out.println("-----------");
+        new Student("Sneha", 4, "BCom", "XYZ College");
+        System.out.println("-----------");
+        new Student("Arjun", 5, "BBA", "PQR College", 90.2);
     }
 }
