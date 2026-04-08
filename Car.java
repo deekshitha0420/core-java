@@ -1,32 +1,43 @@
 class Car {
+    int id; 
+	String name; 
+	String brand; 
+	double price; 
+	int mileage;
+    String fuelType; 
+	String color; 
+	int seats; 
+	String model; 
+	boolean available;
 
-    String carName;
-    int model;
-    double price;
-    String color;
-    String fuelType;
-
-    Car() {
-        this("Swift", 2020);
-        System.out.println("Default Constructor");
-    }
-
-    Car(String carName, int model) {
-        this(carName, model, 800000);
-        System.out.println("Two Parameter Constructor");
-    }
-
-    Car(String carName, int model, double price) {
-        this(carName, model, price, "White");
-        System.out.println("Three Parameter Constructor");
-    }
-
-    Car(String carName, int model, double price, String color) {
-        this(carName, model, price, color, "Petrol");
-        System.out.println("Four Parameter Constructor");
-    }
-
-    Car(String carName, int model, double price, String color, String fuelType) {
-        System.out.println(carName + " " + model + " " + price + " " + color + " " + fuelType);
-    }
+    int getId(int id){ 
+	  return id; 
+	}
+    String getName(String name){ 
+	  return name; 
+	}
+    String getBrand(String brand){ 
+	   return brand; 
+	}
+    double getPrice(double price){ 
+	   return price; 
+	}
+    int getMileage(int mileage){ 
+	   return mileage; 
+	}
+    String getFuel(String fuel){ 
+	   return fuel; 
+	}
+    String getColor(String color){ 
+	   return color; 
+	}
+    int getSeats(int seats){ 
+	   return seats; 
+	}
+    String getModel(String model){ 
+	   return model; 
+	}
+    boolean isAvailable(boolean a){ 
+	   return a; 
+	}
 }

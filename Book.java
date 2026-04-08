@@ -1,32 +1,43 @@
 class Book {
+    int id; 
+	String title; 
+	String author; 
+	double price; 
+	int pages;
+    String publisher; 
+	String language; 
+	String genre; 
+	int year; 
+	boolean available;
 
-    String title;
-    String author;
-    int pages;
-    double price;
-    String publisher;
-
-    Book() {
-        this("Java Basics", "John");
-        System.out.println("Default Constructor");
-    }
-
-    Book(String title, String author) {
-        this(title, author, 200);
-        System.out.println("Two Parameter Constructor");
-    }
-
-    Book(String title, String author, int pages) {
-        this(title, author, pages, 350);
-        System.out.println("Three Parameter Constructor");
-    }
-
-    Book(String title, String author, int pages, double price) {
-        this(title, author, pages, price, "XYZ Publications");
-        System.out.println("Four Parameter Constructor");
-    }
-
-    Book(String title, String author, int pages, double price, String publisher) {
-        System.out.println(title + " " + author + " " + pages + " " + price + " " + publisher);
-    }
+    int getId(int id){ 
+	return id; 
+	}
+    String getTitle(String title){ 
+	return title; 
+	}
+    String getAuthor(String author){ 
+	return author; 
+	}
+    double getPrice(double price){ 
+	return price; 
+	}
+    int getPages(int pages){ 
+	return pages; 
+	}
+    String getPublisher(String pub){ 
+	return pub; 
+	}
+    String getLanguage(String lang){ 
+	return lang; 
+	}
+    String getGenre(String genre){ 
+	return genre; 
+	}
+    int getYear(int year){ 
+	return year; 
+	}
+    boolean isAvailable(boolean a){ 
+	return a; 
+	}
 }

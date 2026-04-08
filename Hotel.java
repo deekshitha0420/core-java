@@ -1,14 +1,14 @@
-class Restaurant {
+class Hotel {
     int id; 
 	String name; 
 	String city; 
-	String type; 
-	double rating;
-    String food; 
-	int tables; 
-	String timing; 
+	int rooms; 
+	double price;
+    String type; 
+	String rating; 
+	String food; 
 	long phone; 
-	boolean open;
+	boolean available;
 
     int getId(int id){ 
 	return id; 
@@ -19,25 +19,25 @@ class Restaurant {
     String getCity(String city){ 
 	return city; 
 	}
+    int getRooms(int r){ 
+	return r; 
+	}
+    double getPrice(double p){ 
+	return p; 
+	}
     String getType(String t){ 
 	return t; 
 	}
-    double getRating(double r){ 
+    String getRating(String r){ 
 	return r; 
 	}
     String getFood(String f){ 
 	return f; 
 	}
-    int getTables(int t){ 
-	return t; 
-	}
-    String getTiming(String t){ 
-	return t; 
-	}
     long getPhone(long p){ 
 	return p; 
 	}
-    boolean isOpen(boolean o){ 
-	return o; 
+    boolean isAvailable(boolean a){ 
+	return a; 
 	}
 }

@@ -1,12 +1,12 @@
-class Restaurant {
+class Gym {
     int id; 
 	String name; 
 	String city; 
-	String type; 
-	double rating;
-    String food; 
-	int tables; 
+	int trainers; 
+	int members;
+    String type; 
 	String timing; 
+	double fee; 
 	long phone; 
 	boolean open;
 
@@ -19,20 +19,20 @@ class Restaurant {
     String getCity(String city){ 
 	return city; 
 	}
-    String getType(String t){ 
+    int getTrainers(int t){ 
 	return t; 
 	}
-    double getRating(double r){ 
-	return r; 
+    int getMembers(int m){ 
+	return m; 
 	}
-    String getFood(String f){ 
-	return f; 
-	}
-    int getTables(int t){ 
+    String getType(String t){ 
 	return t; 
 	}
     String getTiming(String t){ 
 	return t; 
+	}
+    double getFee(double f){ 
+	return f; 
 	}
     long getPhone(long p){ 
 	return p; 

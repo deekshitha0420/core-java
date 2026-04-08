@@ -1,32 +1,56 @@
 class Student {
 
+    // 10 Instance Variables (States)
+    int id;
     String name;
-    int rollNo;
+    int age;
     String course;
+    double marks;
+    String grade;
     String college;
-    double percentage;
+    String city;
+    long phone;
+    boolean isActive;
 
-    Student() {
-        this("Anu", 1);
-        System.out.println("Default Constructor");
+    // 10 Methods (Behaviors)
+
+    int getId(int id) {
+        return id;
     }
 
-    Student(String name, int rollNo) {
-        this(name, rollNo, "BCA");
-        System.out.println("Two Parameter Constructor");
+    String getName(String name) {
+        return name;
     }
 
-    Student(String name, int rollNo, String course) {
-        this(name, rollNo, course, "ABC College");
-        System.out.println("Three Parameter Constructor");
+    int getAge(int age) {
+        return age;
     }
 
-    Student(String name, int rollNo, String course, String college) {
-        this(name, rollNo, course, college, 85.5);
-        System.out.println("Four Parameter Constructor");
+    String getCourse(String course) {
+        return course;
     }
 
-    Student(String name, int rollNo, String course, String college, double percentage) {
-        System.out.println(name + " " + rollNo + " " + course + " " + college + " " + percentage);
+    double getMarks(double marks) {
+        return marks;
+    }
+
+    String getGrade(String grade) {
+        return grade;
+    }
+
+    String getCollege(String college) {
+        return college;
+    }
+
+    String getCity(String city) {
+        return city;
+    }
+
+    long getPhone(long phone) {
+        return phone;
+    }
+
+    boolean isActive(boolean status) {
+        return status;
     }
 }

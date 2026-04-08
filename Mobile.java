@@ -1,27 +1,43 @@
 class Mobile {
-    String name;
-    String brand;
-    double price;
-    int storage;
-    int battery;
-    String color;
-	
-	 public void display(){   
-		System.out.println("Mobile name:"+name);
-        System.out.println("Mobile brand:"+brand);
-        System.out.println("Mobile price:"+price);
-        System.out.println("Mobile storage:"+storage);
-        System.out.println("Mobile battery:"+battery);
-        System.out.println("Mobile color:"+color);
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    int id; 
+	String name; 
+	String brand; 
+	double price; 
+	int ram;
+    int storage; 
+	String color; 
+	int battery; 
+	String os;
+	boolean available;
+
+    int getId(int id){ 
+	return id; 
 	}
-	
+    String getName(String name){ 
+	return name; 
+	}
+    String getBrand(String brand){ 
+	return brand; 
+	}
+    double getPrice(double price){ 
+	return price; 
+	}
+    int getRam(int ram){ 
+	return ram; 
+	}
+    int getStorage(int storage){ 
+	return storage; 
+	}
+    String getColor(String color){ 
+	return color; 
+	}
+    int getBattery(int battery){ 
+	return battery; 
+	}
+    String getOS(String os){ 
+	return os; 
+	}
+    boolean isAvailable(boolean a){ 
+	return a; 
+	}
 }

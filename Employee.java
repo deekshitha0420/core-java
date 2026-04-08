@@ -1,32 +1,53 @@
 class Employee {
 
-    String empName;
     int empId;
-    double salary;
+    String empName;
+    int age;
     String department;
+    double salary;
+    String designation;
     String company;
+    String city;
+    long phone;
+    boolean isWorking;
 
-    Employee() {
-        this("Ramesh", 201);
-        System.out.println("Default Constructor");
+    int getEmpId(int empId) {
+        return empId;
     }
 
-    Employee(String empName, int empId) {
-        this(empName, empId, 30000);
-        System.out.println("Two Parameter Constructor");
+    String getEmpName(String empName) {
+        return empName;
     }
 
-    Employee(String empName, int empId, double salary) {
-        this(empName, empId, salary, "HR");
-        System.out.println("Three Parameter Constructor");
+    int getAge(int age) {
+        return age;
     }
 
-    Employee(String empName, int empId, double salary, String department) {
-        this(empName, empId, salary, department, "Infosys");
-        System.out.println("Four Parameter Constructor");
+    String getDepartment(String dept) {
+        return dept;
     }
 
-    Employee(String empName, int empId, double salary, String department, String company) {
-        System.out.println(empName + " " + empId + " " + salary + " " + department + " " + company);
+    double getSalary(double salary) {
+        return salary;
+    }
+
+    String getDesignation(String des) {
+        return des;
+    }
+
+    String getCompany(String company) {
+        return company;
+    }
+
+    String getCity(String city) {
+        return city;
+    }
+
+    long getPhone(long phone) {
+        return phone;
+    }
+
+    boolean isWorking(boolean status) {
+        return status;
     }
 }
