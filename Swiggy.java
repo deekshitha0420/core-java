@@ -1,31 +1,32 @@
 class Swiggy{
-	void getswiggyDetails(){
-		System.out.println("invoking getMenuDetails");
-
+	
+	public double getPriceByFoodName(String FoodName){
+		System.out.println("invoking getPriceByFoodName:"+FoodName);
+		double Price=0.0;
+		
+		if("egg rice"==FoodName){
+			Price=65;
+		} else if("fried rice"==FoodName){
+			Price=90.99;
+		} else if("aloo paratha"==FoodName){
+			Price=80.21;
+		} else if("biriyani"==FoodName){
+			Price=120;
+		} else if("boti gojju"==FoodName){
+			Price=100;
+		} else {
+			Price=0.0;
+		}
+		System.out.println("end of getPriceByFoodName");
+		return Price;
 	}
 	
-	void checkFoodPriceByFoodName(String foodName){
-        System.out.println("invoking checkFoodPriceByfoodNameandthefoodName:"+ foodName);
-
-		if(foodName.equalsIgnoreCase("pizza"))
-		{
-		  System.out.println("the Price is:350");
-		}
-		 else
+	public double getTotalAmountByPriceAndQuantity(double Price,int Quantity){
+		System.out.println("invoking getTotalAmountByPriceAndQuantity");
 		
-	    if(foodName.equalsIgnoreCase("burger"))
-		{
-		  System.out.println("the Price is:250");
-		}
-		 else
-		
-	    if(foodName.equalsIgnoreCase("ice cream"))
-		{
-		  System.out.println("the Price is:150");
-		}
-		 else{
-		  System.out.println(foodName +" is not available");
-		  System.out.println("the price is:0.0");
-		}
+		double TotalPrice=0.0;
+		TotalPrice=Price*Quantity;
+		System.out.println("end of getTotalAmountByPriceAndQuantity");
+		return TotalPrice;
 	}
 }

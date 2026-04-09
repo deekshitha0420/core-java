@@ -1,68 +1,16 @@
 class Amazon {
-	
-  public boolean login(String userName, String psw) {
-    System.out.println("invoking login using userName:" + userName + " and psw:" + psw);
 
-    String reguserName = "deekshitha";
-    String regpsw = "punya@123";
-    boolean isLogin = false;
+    public double getPriceByProduct(String product) {
+        double price = 0;
 
-    if (userName.equals(reguserName) && psw.equals(regpsw)) {
-      isLogin = true;
+        if(product.equals("mobile")) price = 15000;
+        else if(product.equals("laptop")) price = 50000;
+        else if(product.equals("watch")) price = 2000;
+
+        return price;
     }
 
-    return isLogin;
-  }
-
-  public String login(long phnum, int otp) {
-    System.out.println("invoking login using phone number:" + phnum + " otp:" + otp);
-
-    long regphnum = 9945165183L;
-    int regotp = 2468;
-    String message;
-
-    if (phnum == regphnum && otp == regotp) {
-      message = "Login Successful";
-    } else {
-      message = "Login Failed";
+    public double getTotalAmount(double price, int qty, double discount) {
+        return (price * qty) - discount;
     }
-
-    return message;
-  }
-  
-  public String search(String productName) {
-    System.out.println("invoking search productName:" + productName);
-
-    String message = "searched product Name is available: " + productName;
-    return message;
-  }
-
-  public String search(String productName, String brand) {
-    System.out.println("invoking search productName:" + productName + " and brand:" + brand);
-
-    String message = "searched product Name:" + productName + " brand:" + brand + " is available";
-    return message;
-  }
-
-  public String search(String productName, String brand, int price) {
-    System.out.println("invoking search productName:" + productName + " brand:" + brand + " price:" + price);
-
-    String message = "Product:" + productName + " brand:" + brand + " under price:" + price + " is available";
-    return message;
-  }
-
-  public String search(String productName, String brand, int price, String color) {
-    System.out.println("invoking search productName:" + productName + " brand:" + brand + " price:" + price + " color:" + color);
-
-    String message = "Product:" + productName + " " + color + " color is available";
-    return message;
-  }
-
-  public String search(String productName, String brand, int price, String color, String size) {
-    System.out.println("invoking search productName:" + productName + " brand:" + brand + " price:" + price + " color:" + color + " size:" + size);
-
-    String message = "Product:" + productName + " size:" + size + " is available";
-    return message;
-  }
-
 }
